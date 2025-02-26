@@ -1,0 +1,654 @@
+----------------------------------------------------------------------------------------------------
+                              INDIANA -- INDISTINGUISHABILITY ANALYSIS                              
+
+                              INDIANA -- INDISTINGUISHABILITY ANALYSIS                              
+
+                                      Ruhr-Universität Bochum                                      
+                              Pascal Sasdrich (pascal.sasdrich@rub.de)                              
+                        Jan Richter-Brockmann (jan.richter-brockmann@rub.de)                        
+
+                                         Copyright (c) 2025                                         
+                                           Pascal Sasdrich                                          
+                                        Jan Richter-Brockmann                                       
+
+                                         All rights reserved                                       
+----------------------------------------------------------------------------------------------------
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: CELL LIBRARY
+----------------------------------------------------------------------------------------------------
+     0.006    PARSER           CELLLIB               source: cell/nang45.txt
+     0.006    PARSER           CELLLIB               Parsed cell library with 14 gate type(s). 
+----------------------------------------------------------------------------------------------------
+     0.006    PARSER           CELLLIB               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: DESIGN UNDER TEST
+----------------------------------------------------------------------------------------------------
+     3.523    PARSER           VERILOG               source: ./test/indistinguishability/case-studies-paper/present/present-single-round-hpc2-d1.v
+     3.523    PARSER           VERILOG               	module(s) : 1
+     3.523    PARSER           VERILOG               	gate(s)   : 3088
+     3.523    PARSER           VERILOG               	 - comb.  : 1552
+     3.523    PARSER           VERILOG               	 - seq.   : 1536
+     3.523    PARSER           VERILOG               	wire(s)   : 3441
+     3.523    PARSER           VERILOG               	pin(s)    : 11139
+     3.523    PARSER           VERILOG               WARNING: detected 1506 unconnected pins!
+----------------------------------------------------------------------------------------------------
+     3.523    PARSER           VERILOG               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANNOTATIONS
+----------------------------------------------------------------------------------------------------
+     3.527    PREPROCESSOR     ANNOTATION            1 input wire was tagged as clock input.
+     3.527    PREPROCESSOR     ANNOTATION            0 input wires were tagged as control inputs.
+     3.527    PREPROCESSOR     ANNOTATION            64 input wires were tagged as refresh inputs.
+     3.527    PREPROCESSOR     ANNOTATION            0 output wires were tagged as error flags.
+     3.527    PREPROCESSOR     ANNOTATION            0 input wires were tagged with PIIDs.
+     3.527    PREPROCESSOR     ANNOTATION            384 wires were tagged with a share domain.
+     3.527    PREPROCESSOR     ANNOTATION            384 wires were tagged with a share index.
+     3.527    PREPROCESSOR     ANNOTATION            0 wires were tagged with a fault domain.
+----------------------------------------------------------------------------------------------------
+     3.527    PREPROCESSOR     ANNOTATION            [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FILTERING
+----------------------------------------------------------------------------------------------------
+     3.529    PREPROCESSOR     FILTERING             Filtering for side-channel verification is disabled!
+     3.529    PREPROCESSOR     FILTERING             Filtering for fault-injection verification is disabled!
+----------------------------------------------------------------------------------------------------
+     3.529    PREPROCESSOR     FILTERING             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO
+----------------------------------------------------------------------------------------------------
+     3.529    PREPROCESSOR     MULTI-THREADING       cores: 16
+     3.529    PREPROCESSOR     MULTI-THREADING       memory: 0 GB
+     3.529    PREPROCESSOR     MULTI-THREADING       reordering: disabled
+----------------------------------------------------------------------------------------------------
+     3.529    PREPROCESSOR     MULTI-THREADING       [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODEL POSTPROCESSING
+----------------------------------------------------------------------------------------------------
+     3.545    PREPROCESSOR     MODEL POSTPROCESSING  Removed clock tree from netlist (1 wire was removed).
+     3.545    PREPROCESSOR     MODEL POSTPROCESSING  No control signals were found.
+     3.545    PREPROCESSOR     MODEL POSTPROCESSING  Removed 1506 unconnected pins.
+     3.545    PREPROCESSOR     MODEL POSTPROCESSING  Removed 0 unconnected wires.
+----------------------------------------------------------------------------------------------------
+     3.545    PREPROCESSOR     MODEL POSTPROCESSING  [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: PROPERTIES
+----------------------------------------------------------------------------------------------------
+     3.624    PREPROCESSOR     MODEL PROPERTIES      Determined 128 shared inputs.
+     3.624    PREPROCESSOR     MODEL PROPERTIES      	Minimum number of shares: 2
+     3.624    PREPROCESSOR     MODEL PROPERTIES      Identified stage(s): 
+     3.624    PREPROCESSOR     MODEL PROPERTIES      	logic    : 4
+     3.624    PREPROCESSOR     MODEL PROPERTIES      	register : 3
+----------------------------------------------------------------------------------------------------
+     3.624    PREPROCESSOR     MODEL PROPERTIES      [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: PARTITIONER
+----------------------------------------------------------------------------------------------------
+     3.783    PARTITIONER      BREADTH+DEPTH         Identified 64 partitions.
+----------------------------------------------------------------------------------------------------
+     3.783    PARTITIONER      BREADTH+DEPTH         [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: Configure FIA
+----------------------------------------------------------------------------------------------------
+     3.783    PREPROCESSOR     FIA                   FIA preprocessor is disabled!
+----------------------------------------------------------------------------------------------------
+     3.783    PREPROCESSOR     FIA                   [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: Configure SCA
+----------------------------------------------------------------------------------------------------
+     3.784    PREPROCESSOR     SCA                   Determined 1664 probe positions.
+     3.784    PREPROCESSOR     SCA                   Determined 0 probe combinations.
+----------------------------------------------------------------------------------------------------
+     3.784    PREPROCESSOR     SCA                   [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.822    PREPROCESSOR     ELABORATE             module  : virtual_module_0
+     3.822    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.822    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.822    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.822    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.823    PREPROCESSOR     ELABORATE             module  : virtual_module_1
+     3.823    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.823    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.823    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.823    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.823    PREPROCESSOR     ELABORATE             module  : virtual_module_2
+     3.823    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.823    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.823    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.823    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.824    PREPROCESSOR     ELABORATE             module  : virtual_module_3
+     3.824    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.824    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.824    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.824    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.824    PREPROCESSOR     ELABORATE             module  : virtual_module_4
+     3.824    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.824    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.824    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.824    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.825    PREPROCESSOR     ELABORATE             module  : virtual_module_5
+     3.825    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.825    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.825    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.825    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.826    PREPROCESSOR     ELABORATE             module  : virtual_module_6
+     3.826    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.826    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.826    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.826    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.826    PREPROCESSOR     ELABORATE             module  : virtual_module_7
+     3.826    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.826    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.826    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.826    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.827    PREPROCESSOR     ELABORATE             module  : virtual_module_8
+     3.827    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.827    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.827    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.827    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.827    PREPROCESSOR     ELABORATE             module  : virtual_module_9
+     3.827    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.827    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.827    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.827    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.828    PREPROCESSOR     ELABORATE             module  : virtual_module_10
+     3.828    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.828    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.828    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.828    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.828    PREPROCESSOR     ELABORATE             module  : virtual_module_11
+     3.828    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.828    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.828    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.829    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.829    PREPROCESSOR     ELABORATE             module  : virtual_module_12
+     3.829    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.829    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.829    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.829    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.830    PREPROCESSOR     ELABORATE             module  : virtual_module_13
+     3.830    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.830    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.830    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.830    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.830    PREPROCESSOR     ELABORATE             module  : virtual_module_14
+     3.830    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.830    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.830    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.830    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     3.831    PREPROCESSOR     ELABORATE             module  : virtual_module_15
+     3.831    PREPROCESSOR     ELABORATE             	inputs  : 20
+     3.831    PREPROCESSOR     ELABORATE             	outputs : 40
+     3.831    PREPROCESSOR     ELABORATE             	wires   : 55
+----------------------------------------------------------------------------------------------------
+     3.831    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: RANDOM PROBING
+----------------------------------------------------------------------------------------------------
+     4.115    ANALYZER         FFT-INDIANA           leakage probability (stage 1) : 
+     4.115    ANALYZER         FFT-INDIANA           	max. probes  : 60
+     4.115    ANALYZER         FFT-INDIANA           	max. samples : 50
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_0 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_1 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_2 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_3 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_4 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_5 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_6 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_7 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_8 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_9 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_10 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_11 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_12 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_13 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_14 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           	virtual_module_15 (min./max.) : 8.026586e-04 / 8.026586e-04
+     4.115    ANALYZER         FFT-INDIANA           total (min./max.): 1.276552e-02 / 1.276552e-02
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     4.115    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY TRANSFER
+----------------------------------------------------------------------------------------------------
+     4.278    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.291    PREPROCESSOR     ELABORATE             module  : virtual_module_16
+     4.291    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.291    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.291    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.291    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.305    PREPROCESSOR     ELABORATE             module  : virtual_module_17
+     4.305    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.305    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.305    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.305    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.319    PREPROCESSOR     ELABORATE             module  : virtual_module_18
+     4.319    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.319    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.319    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.319    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.333    PREPROCESSOR     ELABORATE             module  : virtual_module_19
+     4.333    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.333    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.333    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.333    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.346    PREPROCESSOR     ELABORATE             module  : virtual_module_20
+     4.346    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.347    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.347    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.347    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.360    PREPROCESSOR     ELABORATE             module  : virtual_module_21
+     4.360    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.360    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.360    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.360    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.374    PREPROCESSOR     ELABORATE             module  : virtual_module_22
+     4.374    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.374    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.374    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.374    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.388    PREPROCESSOR     ELABORATE             module  : virtual_module_23
+     4.388    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.388    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.388    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.388    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.402    PREPROCESSOR     ELABORATE             module  : virtual_module_24
+     4.402    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.402    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.402    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.402    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.416    PREPROCESSOR     ELABORATE             module  : virtual_module_25
+     4.416    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.416    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.416    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.416    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.431    PREPROCESSOR     ELABORATE             module  : virtual_module_26
+     4.431    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.432    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.432    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.432    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.445    PREPROCESSOR     ELABORATE             module  : virtual_module_27
+     4.445    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.445    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.445    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.445    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.459    PREPROCESSOR     ELABORATE             module  : virtual_module_28
+     4.459    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.459    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.459    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.459    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.473    PREPROCESSOR     ELABORATE             module  : virtual_module_29
+     4.473    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.473    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.473    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.473    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.487    PREPROCESSOR     ELABORATE             module  : virtual_module_30
+     4.487    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.487    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.487    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.487    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     4.501    PREPROCESSOR     ELABORATE             module  : virtual_module_31
+     4.501    PREPROCESSOR     ELABORATE             	inputs  : 40
+     4.501    PREPROCESSOR     ELABORATE             	outputs : 34
+     4.501    PREPROCESSOR     ELABORATE             	wires   : 92
+----------------------------------------------------------------------------------------------------
+     4.501    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: RANDOM PROBING
+----------------------------------------------------------------------------------------------------
+     5.404    ANALYZER         FFT-INDIANA           leakage probability (stage 2) : 
+     5.404    ANALYZER         FFT-INDIANA           	max. probes  : 60
+     5.404    ANALYZER         FFT-INDIANA           	max. samples : 50
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_16 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_17 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_18 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_19 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_20 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_21 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_22 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_23 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_24 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_25 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_26 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_27 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_28 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_29 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_30 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           	virtual_module_31 (min./max.) : 1.218211e-03 / 1.218211e-03
+     5.404    ANALYZER         FFT-INDIANA           total (min./max.): 1.931431e-02 / 1.931431e-02
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     5.404    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY TRANSFER
+----------------------------------------------------------------------------------------------------
+     5.595    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.612    PREPROCESSOR     ELABORATE             module  : virtual_module_32
+     5.612    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.612    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.612    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.612    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.629    PREPROCESSOR     ELABORATE             module  : virtual_module_33
+     5.629    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.629    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.629    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.629    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.646    PREPROCESSOR     ELABORATE             module  : virtual_module_34
+     5.646    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.646    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.646    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.646    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.663    PREPROCESSOR     ELABORATE             module  : virtual_module_35
+     5.663    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.664    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.664    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.664    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.681    PREPROCESSOR     ELABORATE             module  : virtual_module_36
+     5.681    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.681    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.681    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.681    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.698    PREPROCESSOR     ELABORATE             module  : virtual_module_37
+     5.698    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.698    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.698    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.698    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.715    PREPROCESSOR     ELABORATE             module  : virtual_module_38
+     5.715    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.715    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.715    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.715    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.733    PREPROCESSOR     ELABORATE             module  : virtual_module_39
+     5.733    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.733    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.733    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.733    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.750    PREPROCESSOR     ELABORATE             module  : virtual_module_40
+     5.750    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.750    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.750    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.750    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.767    PREPROCESSOR     ELABORATE             module  : virtual_module_41
+     5.767    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.767    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.767    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.767    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.788    PREPROCESSOR     ELABORATE             module  : virtual_module_42
+     5.788    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.788    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.788    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.788    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.806    PREPROCESSOR     ELABORATE             module  : virtual_module_43
+     5.806    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.806    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.806    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.806    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.824    PREPROCESSOR     ELABORATE             module  : virtual_module_44
+     5.824    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.824    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.824    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.824    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.841    PREPROCESSOR     ELABORATE             module  : virtual_module_45
+     5.841    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.841    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.841    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.841    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.859    PREPROCESSOR     ELABORATE             module  : virtual_module_46
+     5.859    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.859    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.859    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.859    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.876    PREPROCESSOR     ELABORATE             module  : virtual_module_47
+     5.876    PREPROCESSOR     ELABORATE             	inputs  : 34
+     5.876    PREPROCESSOR     ELABORATE             	outputs : 22
+     5.876    PREPROCESSOR     ELABORATE             	wires   : 104
+----------------------------------------------------------------------------------------------------
+     5.876    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+

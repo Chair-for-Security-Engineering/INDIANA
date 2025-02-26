@@ -1,0 +1,1861 @@
+----------------------------------------------------------------------------------------------------
+                              INDIANA -- INDISTINGUISHABILITY ANALYSIS                              
+
+                              INDIANA -- INDISTINGUISHABILITY ANALYSIS                              
+
+                                      Ruhr-Universität Bochum                                      
+                              Pascal Sasdrich (pascal.sasdrich@rub.de)                              
+                        Jan Richter-Brockmann (jan.richter-brockmann@rub.de)                        
+
+                                         Copyright (c) 2025                                         
+                                           Pascal Sasdrich                                          
+                                        Jan Richter-Brockmann                                       
+
+                                         All rights reserved                                       
+----------------------------------------------------------------------------------------------------
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: CELL LIBRARY
+----------------------------------------------------------------------------------------------------
+     0.001    PARSER           CELLLIB               source: cell/nang45.txt
+     0.001    PARSER           CELLLIB               Parsed cell library with 14 gate type(s). 
+----------------------------------------------------------------------------------------------------
+     0.001    PARSER           CELLLIB               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: DESIGN UNDER TEST
+----------------------------------------------------------------------------------------------------
+     4.743    PARSER           VERILOG               source: test/indistinguishability/case-studies-paper/led/led-single-round-hpc2-d1.v
+     4.743    PARSER           VERILOG               	module(s) : 1
+     4.743    PARSER           VERILOG               	gate(s)   : 3600
+     4.743    PARSER           VERILOG               	 - comb.  : 2064
+     4.743    PARSER           VERILOG               	 - seq.   : 1536
+     4.743    PARSER           VERILOG               	wire(s)   : 4241
+     4.743    PARSER           VERILOG               	pin(s)    : 12675
+     4.743    PARSER           VERILOG               WARNING: detected 288 unconnected wires!
+     4.743    PARSER           VERILOG               WARNING: detected 1506 unconnected pins!
+----------------------------------------------------------------------------------------------------
+     4.743    PARSER           VERILOG               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANNOTATIONS
+----------------------------------------------------------------------------------------------------
+     4.747    PREPROCESSOR     ANNOTATION            1 input wire was tagged as clock input.
+     4.747    PREPROCESSOR     ANNOTATION            0 input wires were tagged as control inputs.
+     4.748    PREPROCESSOR     ANNOTATION            WARNING: 2 wires could not be tagged as control input in the MUT.
+     4.748    PREPROCESSOR     ANNOTATION            	ENABLE
+     4.748    PREPROCESSOR     ANNOTATION            	RST
+     4.748    PREPROCESSOR     ANNOTATION            64 input wires were tagged as refresh inputs.
+     4.748    PREPROCESSOR     ANNOTATION            0 output wires were tagged as error flags.
+     4.748    PREPROCESSOR     ANNOTATION            0 input wires were tagged with PIIDs.
+     4.748    PREPROCESSOR     ANNOTATION            384 wires were tagged with a share domain.
+     4.748    PREPROCESSOR     ANNOTATION            WARNING: 3 wires could not be identified in the MUT.
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3
+     4.748    PREPROCESSOR     ANNOTATION            384 wires were tagged with a share index.
+     4.748    PREPROCESSOR     ANNOTATION            WARNING: 192 wires could not be identified in the MUT.
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[0]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[1]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[2]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[3]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[4]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[5]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[6]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[7]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[8]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[9]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[10]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[11]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[12]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[13]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[14]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[15]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[16]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[17]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[18]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[19]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[20]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[21]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[22]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[23]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[24]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[25]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[26]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[27]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[28]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[29]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[30]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[31]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[32]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[33]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[34]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[35]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[36]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[37]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[38]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[39]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[40]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[41]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[42]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[43]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[44]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[45]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[46]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[47]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[48]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[49]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[50]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[51]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[52]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[53]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[54]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[55]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[56]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[57]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[58]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[59]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[60]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[61]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[62]
+     4.748    PREPROCESSOR     ANNOTATION            	ROUND_IN_S3[63]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[0]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[1]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[2]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[3]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[4]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[5]
+     4.748    PREPROCESSOR     ANNOTATION            	KEY_S3[6]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[7]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[8]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[9]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[10]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[11]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[12]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[13]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[14]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[15]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[16]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[17]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[18]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[19]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[20]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[21]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[22]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[23]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[24]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[25]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[26]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[27]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[28]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[29]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[30]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[31]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[32]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[33]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[34]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[35]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[36]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[37]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[38]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[39]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[40]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[41]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[42]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[43]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[44]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[45]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[46]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[47]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[48]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[49]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[50]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[51]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[52]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[53]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[54]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[55]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[56]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[57]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[58]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[59]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[60]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[61]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[62]
+     4.749    PREPROCESSOR     ANNOTATION            	KEY_S3[63]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[0]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[1]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[2]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[3]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[4]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[5]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[6]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[7]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[8]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[9]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[10]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[11]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[12]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[13]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[14]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[15]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[16]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[17]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[18]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[19]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[20]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[21]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[22]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[23]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[24]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[25]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[26]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[27]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[28]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[29]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[30]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[31]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[32]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[33]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[34]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[35]
+     4.749    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[36]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[37]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[38]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[39]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[40]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[41]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[42]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[43]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[44]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[45]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[46]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[47]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[48]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[49]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[50]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[51]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[52]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[53]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[54]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[55]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[56]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[57]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[58]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[59]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[60]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[61]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[62]
+     4.750    PREPROCESSOR     ANNOTATION            	ROUND_OUT_S3[63]
+     4.750    PREPROCESSOR     ANNOTATION            0 wires were tagged with a fault domain.
+----------------------------------------------------------------------------------------------------
+     4.750    PREPROCESSOR     ANNOTATION            [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FILTERING
+----------------------------------------------------------------------------------------------------
+     4.752    PREPROCESSOR     FILTERING             Filtering for side-channel verification is disabled!
+     4.752    PREPROCESSOR     FILTERING             Filtering for fault-injection verification is disabled!
+----------------------------------------------------------------------------------------------------
+     4.752    PREPROCESSOR     FILTERING             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO
+----------------------------------------------------------------------------------------------------
+     4.752    PREPROCESSOR     MULTI-THREADING       cores: 16
+     4.752    PREPROCESSOR     MULTI-THREADING       memory: 0 GB
+     4.752    PREPROCESSOR     MULTI-THREADING       reordering: disabled
+----------------------------------------------------------------------------------------------------
+     4.752    PREPROCESSOR     MULTI-THREADING       [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODEL POSTPROCESSING
+----------------------------------------------------------------------------------------------------
+     4.774    PREPROCESSOR     MODEL POSTPROCESSING  Removed clock tree from netlist (1 wire was removed).
+     4.774    PREPROCESSOR     MODEL POSTPROCESSING  No control signals were found.
+     4.774    PREPROCESSOR     MODEL POSTPROCESSING  Removed 1506 unconnected pins.
+     4.774    PREPROCESSOR     MODEL POSTPROCESSING  Removed 288 unconnected wires.
+----------------------------------------------------------------------------------------------------
+     4.774    PREPROCESSOR     MODEL POSTPROCESSING  [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: PROPERTIES
+----------------------------------------------------------------------------------------------------
+     4.906    PREPROCESSOR     MODEL PROPERTIES      Determined 128 shared inputs.
+     4.906    PREPROCESSOR     MODEL PROPERTIES      	Minimum number of shares: 2
+     4.906    PREPROCESSOR     MODEL PROPERTIES      Identified stage(s): 
+     4.906    PREPROCESSOR     MODEL PROPERTIES      	logic    : 4
+     4.906    PREPROCESSOR     MODEL PROPERTIES      	register : 3
+----------------------------------------------------------------------------------------------------
+     4.906    PREPROCESSOR     MODEL PROPERTIES      [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: PARTITIONER
+----------------------------------------------------------------------------------------------------
+     5.157    PARTITIONER      BREADTH+DEPTH         Identified 52 partitions.
+----------------------------------------------------------------------------------------------------
+     5.157    PARTITIONER      BREADTH+DEPTH         [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: Configure FIA
+----------------------------------------------------------------------------------------------------
+     5.157    PREPROCESSOR     FIA                   FIA preprocessor is disabled!
+----------------------------------------------------------------------------------------------------
+     5.157    PREPROCESSOR     FIA                   [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: Configure SCA
+----------------------------------------------------------------------------------------------------
+     5.158    PREPROCESSOR     SCA                   Determined 1664 probe positions.
+     5.158    PREPROCESSOR     SCA                   Determined 0 probe combinations.
+----------------------------------------------------------------------------------------------------
+     5.158    PREPROCESSOR     SCA                   [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.196    PREPROCESSOR     ELABORATE             module  : virtual_module_0
+     5.196    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.196    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.196    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.196    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.196    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.197    PREPROCESSOR     ELABORATE             module  : virtual_module_1
+     5.197    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.197    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.197    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.197    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.197    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.197    PREPROCESSOR     ELABORATE             module  : virtual_module_2
+     5.197    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.197    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.197    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.197    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.197    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.198    PREPROCESSOR     ELABORATE             module  : virtual_module_3
+     5.198    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.198    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.198    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.198    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.198    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.199    PREPROCESSOR     ELABORATE             module  : virtual_module_4
+     5.199    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.199    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.199    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.199    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.199    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.199    PREPROCESSOR     ELABORATE             module  : virtual_module_5
+     5.199    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.199    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.199    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.199    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.199    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.200    PREPROCESSOR     ELABORATE             module  : virtual_module_6
+     5.200    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.200    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.200    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.200    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.200    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.200    PREPROCESSOR     ELABORATE             module  : virtual_module_7
+     5.201    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.201    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.201    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.201    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.201    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.201    PREPROCESSOR     ELABORATE             module  : virtual_module_8
+     5.201    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.201    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.201    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.201    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.201    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.202    PREPROCESSOR     ELABORATE             module  : virtual_module_9
+     5.202    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.202    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.202    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.202    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.202    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.202    PREPROCESSOR     ELABORATE             module  : virtual_module_10
+     5.202    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.202    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.202    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.202    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.202    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.203    PREPROCESSOR     ELABORATE             module  : virtual_module_11
+     5.203    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.203    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.203    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.203    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.203    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.204    PREPROCESSOR     ELABORATE             module  : virtual_module_12
+     5.204    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.204    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.204    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.204    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.204    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.204    PREPROCESSOR     ELABORATE             module  : virtual_module_13
+     5.204    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.204    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.204    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.204    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.204    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.205    PREPROCESSOR     ELABORATE             module  : virtual_module_14
+     5.205    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.205    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.205    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.205    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.205    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.205    PREPROCESSOR     ELABORATE             module  : virtual_module_15
+     5.205    PREPROCESSOR     ELABORATE             	inputs  : 20
+     5.205    PREPROCESSOR     ELABORATE             	outputs : 40
+     5.205    PREPROCESSOR     ELABORATE             	wires   : 55
+     5.205    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.205    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.214    ANALYZER         INDIANA               module: virtual_module_14
+     5.214    ANALYZER         INDIANA               model parameters:
+     5.214    ANALYZER         INDIANA               	glitches    : yes
+     5.215    ANALYZER         INDIANA               	transitions : no
+     5.215    ANALYZER         INDIANA               	couplings   : no
+     5.215    ANALYZER         INDIANA               verification:
+     5.215    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.215    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.215    ANALYZER         INDIANA               failing probe combinations:
+     5.215    ANALYZER         INDIANA               	total : 0
+     5.215    ANALYZER         INDIANA               	first : - 
+     5.215    ANALYZER         INDIANA               Verified on core 13
+----------------------------------------------------------------------------------------------------
+     5.216    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.216    ANALYZER         INDIANA               module: virtual_module_12
+     5.216    ANALYZER         INDIANA               model parameters:
+     5.216    ANALYZER         INDIANA               	glitches    : yes
+     5.216    ANALYZER         INDIANA               	transitions : no
+     5.216    ANALYZER         INDIANA               	couplings   : no
+     5.216    ANALYZER         INDIANA               verification:
+     5.216    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.216    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.216    ANALYZER         INDIANA               failing probe combinations:
+     5.216    ANALYZER         INDIANA               	total : 0
+     5.216    ANALYZER         INDIANA               	first : - 
+     5.216    ANALYZER         INDIANA               Verified on core 12
+----------------------------------------------------------------------------------------------------
+     5.216    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.216    ANALYZER         INDIANA               module: virtual_module_11
+     5.216    ANALYZER         INDIANA               model parameters:
+     5.216    ANALYZER         INDIANA               	glitches    : yes
+     5.216    ANALYZER         INDIANA               	transitions : no
+     5.216    ANALYZER         INDIANA               	couplings   : no
+     5.216    ANALYZER         INDIANA               verification:
+     5.216    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.216    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.216    ANALYZER         INDIANA               failing probe combinations:
+     5.216    ANALYZER         INDIANA               	total : 0
+     5.216    ANALYZER         INDIANA               	first : - 
+     5.216    ANALYZER         INDIANA               Verified on core 11
+----------------------------------------------------------------------------------------------------
+     5.216    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.216    ANALYZER         INDIANA               module: virtual_module_13
+     5.216    ANALYZER         INDIANA               model parameters:
+     5.216    ANALYZER         INDIANA               	glitches    : yes
+     5.216    ANALYZER         INDIANA               	transitions : no
+     5.216    ANALYZER         INDIANA               	couplings   : no
+     5.217    ANALYZER         INDIANA               verification:
+     5.217    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.217    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.217    ANALYZER         INDIANA               failing probe combinations:
+     5.217    ANALYZER         INDIANA               	total : 0
+     5.217    ANALYZER         INDIANA               	first : - 
+     5.217    ANALYZER         INDIANA               Verified on core 15
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               module: virtual_module_9
+     5.217    ANALYZER         INDIANA               model parameters:
+     5.217    ANALYZER         INDIANA               	glitches    : yes
+     5.217    ANALYZER         INDIANA               	transitions : no
+     5.217    ANALYZER         INDIANA               	couplings   : no
+     5.217    ANALYZER         INDIANA               verification:
+     5.217    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.217    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.217    ANALYZER         INDIANA               failing probe combinations:
+     5.217    ANALYZER         INDIANA               	total : 0
+     5.217    ANALYZER         INDIANA               	first : - 
+     5.217    ANALYZER         INDIANA               Verified on core 10
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               module: virtual_module_4
+     5.217    ANALYZER         INDIANA               model parameters:
+     5.217    ANALYZER         INDIANA               	glitches    : yes
+     5.217    ANALYZER         INDIANA               	transitions : no
+     5.217    ANALYZER         INDIANA               	couplings   : no
+     5.217    ANALYZER         INDIANA               verification:
+     5.217    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.217    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.217    ANALYZER         INDIANA               failing probe combinations:
+     5.217    ANALYZER         INDIANA               	total : 0
+     5.217    ANALYZER         INDIANA               	first : - 
+     5.217    ANALYZER         INDIANA               Verified on core 5
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               module: virtual_module_6
+     5.217    ANALYZER         INDIANA               model parameters:
+     5.217    ANALYZER         INDIANA               	glitches    : yes
+     5.217    ANALYZER         INDIANA               	transitions : no
+     5.217    ANALYZER         INDIANA               	couplings   : no
+     5.217    ANALYZER         INDIANA               verification:
+     5.217    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.217    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.217    ANALYZER         INDIANA               failing probe combinations:
+     5.217    ANALYZER         INDIANA               	total : 0
+     5.217    ANALYZER         INDIANA               	first : - 
+     5.217    ANALYZER         INDIANA               Verified on core 7
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.217    ANALYZER         INDIANA               module: virtual_module_10
+     5.217    ANALYZER         INDIANA               model parameters:
+     5.217    ANALYZER         INDIANA               	glitches    : yes
+     5.217    ANALYZER         INDIANA               	transitions : no
+     5.217    ANALYZER         INDIANA               	couplings   : no
+     5.217    ANALYZER         INDIANA               verification:
+     5.217    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.218    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.218    ANALYZER         INDIANA               failing probe combinations:
+     5.218    ANALYZER         INDIANA               	total : 0
+     5.218    ANALYZER         INDIANA               	first : - 
+     5.218    ANALYZER         INDIANA               Verified on core 9
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               module: virtual_module_8
+     5.218    ANALYZER         INDIANA               model parameters:
+     5.218    ANALYZER         INDIANA               	glitches    : yes
+     5.218    ANALYZER         INDIANA               	transitions : no
+     5.218    ANALYZER         INDIANA               	couplings   : no
+     5.218    ANALYZER         INDIANA               verification:
+     5.218    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.218    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.218    ANALYZER         INDIANA               failing probe combinations:
+     5.218    ANALYZER         INDIANA               	total : 0
+     5.218    ANALYZER         INDIANA               	first : - 
+     5.218    ANALYZER         INDIANA               Verified on core 6
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               module: virtual_module_7
+     5.218    ANALYZER         INDIANA               model parameters:
+     5.218    ANALYZER         INDIANA               	glitches    : yes
+     5.218    ANALYZER         INDIANA               	transitions : no
+     5.218    ANALYZER         INDIANA               	couplings   : no
+     5.218    ANALYZER         INDIANA               verification:
+     5.218    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.218    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.218    ANALYZER         INDIANA               failing probe combinations:
+     5.218    ANALYZER         INDIANA               	total : 0
+     5.218    ANALYZER         INDIANA               	first : - 
+     5.218    ANALYZER         INDIANA               Verified on core 8
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               module: virtual_module_15
+     5.218    ANALYZER         INDIANA               model parameters:
+     5.218    ANALYZER         INDIANA               	glitches    : yes
+     5.218    ANALYZER         INDIANA               	transitions : no
+     5.218    ANALYZER         INDIANA               	couplings   : no
+     5.218    ANALYZER         INDIANA               verification:
+     5.218    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.218    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.218    ANALYZER         INDIANA               failing probe combinations:
+     5.218    ANALYZER         INDIANA               	total : 0
+     5.218    ANALYZER         INDIANA               	first : - 
+     5.218    ANALYZER         INDIANA               Verified on core 1
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.218    ANALYZER         INDIANA               module: virtual_module_1
+     5.218    ANALYZER         INDIANA               model parameters:
+     5.218    ANALYZER         INDIANA               	glitches    : yes
+     5.219    ANALYZER         INDIANA               	transitions : no
+     5.219    ANALYZER         INDIANA               	couplings   : no
+     5.219    ANALYZER         INDIANA               verification:
+     5.219    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.219    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.219    ANALYZER         INDIANA               failing probe combinations:
+     5.219    ANALYZER         INDIANA               	total : 0
+     5.219    ANALYZER         INDIANA               	first : - 
+     5.219    ANALYZER         INDIANA               Verified on core 2
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               module: virtual_module_2
+     5.219    ANALYZER         INDIANA               model parameters:
+     5.219    ANALYZER         INDIANA               	glitches    : yes
+     5.219    ANALYZER         INDIANA               	transitions : no
+     5.219    ANALYZER         INDIANA               	couplings   : no
+     5.219    ANALYZER         INDIANA               verification:
+     5.219    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.219    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.219    ANALYZER         INDIANA               failing probe combinations:
+     5.219    ANALYZER         INDIANA               	total : 0
+     5.219    ANALYZER         INDIANA               	first : - 
+     5.219    ANALYZER         INDIANA               Verified on core 0
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               module: virtual_module_5
+     5.219    ANALYZER         INDIANA               model parameters:
+     5.219    ANALYZER         INDIANA               	glitches    : yes
+     5.219    ANALYZER         INDIANA               	transitions : no
+     5.219    ANALYZER         INDIANA               	couplings   : no
+     5.219    ANALYZER         INDIANA               verification:
+     5.219    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.219    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.219    ANALYZER         INDIANA               failing probe combinations:
+     5.219    ANALYZER         INDIANA               	total : 0
+     5.219    ANALYZER         INDIANA               	first : - 
+     5.219    ANALYZER         INDIANA               Verified on core 3
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               module: virtual_module_3
+     5.219    ANALYZER         INDIANA               model parameters:
+     5.219    ANALYZER         INDIANA               	glitches    : yes
+     5.219    ANALYZER         INDIANA               	transitions : no
+     5.219    ANALYZER         INDIANA               	couplings   : no
+     5.219    ANALYZER         INDIANA               verification:
+     5.219    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.219    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.219    ANALYZER         INDIANA               failing probe combinations:
+     5.219    ANALYZER         INDIANA               	total : 0
+     5.219    ANALYZER         INDIANA               	first : - 
+     5.219    ANALYZER         INDIANA               Verified on core 4
+----------------------------------------------------------------------------------------------------
+     5.219    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.220    ANALYZER         INDIANA               module: virtual_module_0
+     5.220    ANALYZER         INDIANA               model parameters:
+     5.220    ANALYZER         INDIANA               	glitches    : yes
+     5.221    ANALYZER         INDIANA               	transitions : no
+     5.221    ANALYZER         INDIANA               	couplings   : no
+     5.221    ANALYZER         INDIANA               verification:
+     5.221    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.221    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.221    ANALYZER         INDIANA               failing probe combinations:
+     5.221    ANALYZER         INDIANA               	total : 0
+     5.221    ANALYZER         INDIANA               	first : - 
+     5.221    ANALYZER         INDIANA               Verified on core 14
+----------------------------------------------------------------------------------------------------
+     5.221    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     5.420    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY TRANSFER
+----------------------------------------------------------------------------------------------------
+     5.535    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.548    PREPROCESSOR     ELABORATE             module  : virtual_module_16
+     5.548    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.548    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.548    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.548    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.548    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.563    PREPROCESSOR     ELABORATE             module  : virtual_module_17
+     5.563    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.563    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.563    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.563    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.563    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.578    PREPROCESSOR     ELABORATE             module  : virtual_module_18
+     5.578    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.578    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.578    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.578    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.578    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.593    PREPROCESSOR     ELABORATE             module  : virtual_module_19
+     5.593    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.593    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.593    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.593    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.593    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.606    PREPROCESSOR     ELABORATE             module  : virtual_module_20
+     5.606    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.606    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.606    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.606    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.606    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.621    PREPROCESSOR     ELABORATE             module  : virtual_module_21
+     5.621    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.621    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.621    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.621    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.621    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.634    PREPROCESSOR     ELABORATE             module  : virtual_module_22
+     5.634    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.635    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.635    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.635    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.635    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.649    PREPROCESSOR     ELABORATE             module  : virtual_module_23
+     5.649    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.649    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.649    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.649    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.649    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.662    PREPROCESSOR     ELABORATE             module  : virtual_module_24
+     5.662    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.662    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.662    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.662    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.662    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.676    PREPROCESSOR     ELABORATE             module  : virtual_module_25
+     5.676    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.676    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.676    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.676    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.676    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.691    PREPROCESSOR     ELABORATE             module  : virtual_module_26
+     5.691    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.691    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.691    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.691    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.691    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.706    PREPROCESSOR     ELABORATE             module  : virtual_module_27
+     5.706    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.706    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.706    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.706    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.706    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.719    PREPROCESSOR     ELABORATE             module  : virtual_module_28
+     5.719    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.719    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.719    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.719    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.719    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.733    PREPROCESSOR     ELABORATE             module  : virtual_module_29
+     5.733    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.733    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.733    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.733    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.733    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.747    PREPROCESSOR     ELABORATE             module  : virtual_module_30
+     5.747    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.747    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.747    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.747    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.747    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     5.760    PREPROCESSOR     ELABORATE             module  : virtual_module_31
+     5.760    PREPROCESSOR     ELABORATE             	inputs  : 40
+     5.760    PREPROCESSOR     ELABORATE             	outputs : 34
+     5.760    PREPROCESSOR     ELABORATE             	wires   : 92
+     5.760    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     5.760    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.795    ANALYZER         INDIANA               module: virtual_module_16
+     5.795    ANALYZER         INDIANA               model parameters:
+     5.795    ANALYZER         INDIANA               	glitches    : yes
+     5.796    ANALYZER         INDIANA               	transitions : no
+     5.796    ANALYZER         INDIANA               	couplings   : no
+     5.796    ANALYZER         INDIANA               verification:
+     5.796    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.796    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.796    ANALYZER         INDIANA               failing probe combinations:
+     5.797    ANALYZER         INDIANA               	total : 0
+     5.797    ANALYZER         INDIANA               	first : - 
+     5.797    ANALYZER         INDIANA               Verified on core 11
+----------------------------------------------------------------------------------------------------
+     5.797    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.798    ANALYZER         INDIANA               module: virtual_module_17
+     5.798    ANALYZER         INDIANA               model parameters:
+     5.798    ANALYZER         INDIANA               	glitches    : yes
+     5.798    ANALYZER         INDIANA               	transitions : no
+     5.798    ANALYZER         INDIANA               	couplings   : no
+     5.798    ANALYZER         INDIANA               verification:
+     5.798    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.798    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.798    ANALYZER         INDIANA               failing probe combinations:
+     5.798    ANALYZER         INDIANA               	total : 0
+     5.798    ANALYZER         INDIANA               	first : - 
+     5.798    ANALYZER         INDIANA               Verified on core 9
+----------------------------------------------------------------------------------------------------
+     5.799    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.799    ANALYZER         INDIANA               module: virtual_module_25
+     5.799    ANALYZER         INDIANA               model parameters:
+     5.799    ANALYZER         INDIANA               	glitches    : yes
+     5.799    ANALYZER         INDIANA               	transitions : no
+     5.799    ANALYZER         INDIANA               	couplings   : no
+     5.799    ANALYZER         INDIANA               verification:
+     5.799    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.799    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.799    ANALYZER         INDIANA               failing probe combinations:
+     5.799    ANALYZER         INDIANA               	total : 0
+     5.799    ANALYZER         INDIANA               	first : - 
+     5.799    ANALYZER         INDIANA               Verified on core 5
+----------------------------------------------------------------------------------------------------
+     5.799    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.799    ANALYZER         INDIANA               module: virtual_module_20
+     5.799    ANALYZER         INDIANA               model parameters:
+     5.799    ANALYZER         INDIANA               	glitches    : yes
+     5.799    ANALYZER         INDIANA               	transitions : no
+     5.799    ANALYZER         INDIANA               	couplings   : no
+     5.799    ANALYZER         INDIANA               verification:
+     5.799    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.799    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.799    ANALYZER         INDIANA               failing probe combinations:
+     5.799    ANALYZER         INDIANA               	total : 0
+     5.799    ANALYZER         INDIANA               	first : - 
+     5.799    ANALYZER         INDIANA               Verified on core 0
+----------------------------------------------------------------------------------------------------
+     5.799    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.799    ANALYZER         INDIANA               module: virtual_module_18
+     5.799    ANALYZER         INDIANA               model parameters:
+     5.799    ANALYZER         INDIANA               	glitches    : yes
+     5.799    ANALYZER         INDIANA               	transitions : no
+     5.799    ANALYZER         INDIANA               	couplings   : no
+     5.799    ANALYZER         INDIANA               verification:
+     5.799    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.799    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.799    ANALYZER         INDIANA               failing probe combinations:
+     5.799    ANALYZER         INDIANA               	total : 0
+     5.799    ANALYZER         INDIANA               	first : - 
+     5.799    ANALYZER         INDIANA               Verified on core 4
+----------------------------------------------------------------------------------------------------
+     5.800    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.800    ANALYZER         INDIANA               module: virtual_module_22
+     5.800    ANALYZER         INDIANA               model parameters:
+     5.800    ANALYZER         INDIANA               	glitches    : yes
+     5.800    ANALYZER         INDIANA               	transitions : no
+     5.800    ANALYZER         INDIANA               	couplings   : no
+     5.800    ANALYZER         INDIANA               verification:
+     5.800    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.800    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.800    ANALYZER         INDIANA               failing probe combinations:
+     5.800    ANALYZER         INDIANA               	total : 0
+     5.800    ANALYZER         INDIANA               	first : - 
+     5.800    ANALYZER         INDIANA               Verified on core 6
+----------------------------------------------------------------------------------------------------
+     5.800    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.800    ANALYZER         INDIANA               module: virtual_module_29
+     5.800    ANALYZER         INDIANA               model parameters:
+     5.800    ANALYZER         INDIANA               	glitches    : yes
+     5.800    ANALYZER         INDIANA               	transitions : no
+     5.800    ANALYZER         INDIANA               	couplings   : no
+     5.800    ANALYZER         INDIANA               verification:
+     5.800    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.800    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.800    ANALYZER         INDIANA               failing probe combinations:
+     5.800    ANALYZER         INDIANA               	total : 0
+     5.800    ANALYZER         INDIANA               	first : - 
+     5.800    ANALYZER         INDIANA               Verified on core 14
+----------------------------------------------------------------------------------------------------
+     5.800    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.800    ANALYZER         INDIANA               module: virtual_module_28
+     5.800    ANALYZER         INDIANA               model parameters:
+     5.800    ANALYZER         INDIANA               	glitches    : yes
+     5.800    ANALYZER         INDIANA               	transitions : no
+     5.800    ANALYZER         INDIANA               	couplings   : no
+     5.800    ANALYZER         INDIANA               verification:
+     5.800    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.800    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.800    ANALYZER         INDIANA               failing probe combinations:
+     5.800    ANALYZER         INDIANA               	total : 0
+     5.800    ANALYZER         INDIANA               	first : - 
+     5.800    ANALYZER         INDIANA               Verified on core 8
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               module: virtual_module_19
+     5.801    ANALYZER         INDIANA               model parameters:
+     5.801    ANALYZER         INDIANA               	glitches    : yes
+     5.801    ANALYZER         INDIANA               	transitions : no
+     5.801    ANALYZER         INDIANA               	couplings   : no
+     5.801    ANALYZER         INDIANA               verification:
+     5.801    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.801    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.801    ANALYZER         INDIANA               failing probe combinations:
+     5.801    ANALYZER         INDIANA               	total : 0
+     5.801    ANALYZER         INDIANA               	first : - 
+     5.801    ANALYZER         INDIANA               Verified on core 7
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               module: virtual_module_27
+     5.801    ANALYZER         INDIANA               model parameters:
+     5.801    ANALYZER         INDIANA               	glitches    : yes
+     5.801    ANALYZER         INDIANA               	transitions : no
+     5.801    ANALYZER         INDIANA               	couplings   : no
+     5.801    ANALYZER         INDIANA               verification:
+     5.801    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.801    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.801    ANALYZER         INDIANA               failing probe combinations:
+     5.801    ANALYZER         INDIANA               	total : 0
+     5.801    ANALYZER         INDIANA               	first : - 
+     5.801    ANALYZER         INDIANA               Verified on core 15
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               module: virtual_module_21
+     5.801    ANALYZER         INDIANA               model parameters:
+     5.801    ANALYZER         INDIANA               	glitches    : yes
+     5.801    ANALYZER         INDIANA               	transitions : no
+     5.801    ANALYZER         INDIANA               	couplings   : no
+     5.801    ANALYZER         INDIANA               verification:
+     5.801    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.801    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.801    ANALYZER         INDIANA               failing probe combinations:
+     5.801    ANALYZER         INDIANA               	total : 0
+     5.801    ANALYZER         INDIANA               	first : - 
+     5.801    ANALYZER         INDIANA               Verified on core 13
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.801    ANALYZER         INDIANA               module: virtual_module_26
+     5.801    ANALYZER         INDIANA               model parameters:
+     5.801    ANALYZER         INDIANA               	glitches    : yes
+     5.801    ANALYZER         INDIANA               	transitions : no
+     5.801    ANALYZER         INDIANA               	couplings   : no
+     5.801    ANALYZER         INDIANA               verification:
+     5.801    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.801    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.801    ANALYZER         INDIANA               failing probe combinations:
+     5.801    ANALYZER         INDIANA               	total : 0
+     5.801    ANALYZER         INDIANA               	first : - 
+     5.802    ANALYZER         INDIANA               Verified on core 10
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               module: virtual_module_24
+     5.802    ANALYZER         INDIANA               model parameters:
+     5.802    ANALYZER         INDIANA               	glitches    : yes
+     5.802    ANALYZER         INDIANA               	transitions : no
+     5.802    ANALYZER         INDIANA               	couplings   : no
+     5.802    ANALYZER         INDIANA               verification:
+     5.802    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.802    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.802    ANALYZER         INDIANA               failing probe combinations:
+     5.802    ANALYZER         INDIANA               	total : 0
+     5.802    ANALYZER         INDIANA               	first : - 
+     5.802    ANALYZER         INDIANA               Verified on core 1
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               module: virtual_module_23
+     5.802    ANALYZER         INDIANA               model parameters:
+     5.802    ANALYZER         INDIANA               	glitches    : yes
+     5.802    ANALYZER         INDIANA               	transitions : no
+     5.802    ANALYZER         INDIANA               	couplings   : no
+     5.802    ANALYZER         INDIANA               verification:
+     5.802    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.802    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.802    ANALYZER         INDIANA               failing probe combinations:
+     5.802    ANALYZER         INDIANA               	total : 0
+     5.802    ANALYZER         INDIANA               	first : - 
+     5.802    ANALYZER         INDIANA               Verified on core 3
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               module: virtual_module_30
+     5.802    ANALYZER         INDIANA               model parameters:
+     5.802    ANALYZER         INDIANA               	glitches    : yes
+     5.802    ANALYZER         INDIANA               	transitions : no
+     5.802    ANALYZER         INDIANA               	couplings   : no
+     5.802    ANALYZER         INDIANA               verification:
+     5.802    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.802    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.802    ANALYZER         INDIANA               failing probe combinations:
+     5.802    ANALYZER         INDIANA               	total : 0
+     5.802    ANALYZER         INDIANA               	first : - 
+     5.802    ANALYZER         INDIANA               Verified on core 2
+----------------------------------------------------------------------------------------------------
+     5.802    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     5.810    ANALYZER         INDIANA               module: virtual_module_31
+     5.810    ANALYZER         INDIANA               model parameters:
+     5.811    ANALYZER         INDIANA               	glitches    : yes
+     5.811    ANALYZER         INDIANA               	transitions : no
+     5.811    ANALYZER         INDIANA               	couplings   : no
+     5.811    ANALYZER         INDIANA               verification:
+     5.811    ANALYZER         INDIANA               	assuming : d ≤ 1
+     5.811    ANALYZER         INDIANA               	verified : d ≤ 1
+     5.812    ANALYZER         INDIANA               failing probe combinations:
+     5.812    ANALYZER         INDIANA               	total : 0
+     5.812    ANALYZER         INDIANA               	first : - 
+     5.812    ANALYZER         INDIANA               Verified on core 12
+----------------------------------------------------------------------------------------------------
+     5.812    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     5.954    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY TRANSFER
+----------------------------------------------------------------------------------------------------
+     6.047    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.064    PREPROCESSOR     ELABORATE             module  : virtual_module_32
+     6.064    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.064    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.064    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.064    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.064    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.079    PREPROCESSOR     ELABORATE             module  : virtual_module_33
+     6.079    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.079    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.079    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.079    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.079    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.095    PREPROCESSOR     ELABORATE             module  : virtual_module_34
+     6.095    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.095    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.095    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.095    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.095    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.111    PREPROCESSOR     ELABORATE             module  : virtual_module_35
+     6.111    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.111    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.111    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.111    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.111    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.127    PREPROCESSOR     ELABORATE             module  : virtual_module_36
+     6.127    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.127    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.127    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.127    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.127    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.142    PREPROCESSOR     ELABORATE             module  : virtual_module_37
+     6.142    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.142    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.142    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.142    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.142    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.158    PREPROCESSOR     ELABORATE             module  : virtual_module_38
+     6.158    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.158    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.158    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.158    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.158    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.175    PREPROCESSOR     ELABORATE             module  : virtual_module_39
+     6.175    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.175    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.175    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.175    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.175    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.191    PREPROCESSOR     ELABORATE             module  : virtual_module_40
+     6.191    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.191    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.191    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.191    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.191    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.207    PREPROCESSOR     ELABORATE             module  : virtual_module_41
+     6.207    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.207    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.207    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.207    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.207    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.225    PREPROCESSOR     ELABORATE             module  : virtual_module_42
+     6.225    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.225    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.225    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.225    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.225    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.241    PREPROCESSOR     ELABORATE             module  : virtual_module_43
+     6.241    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.241    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.241    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.241    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.241    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.257    PREPROCESSOR     ELABORATE             module  : virtual_module_44
+     6.258    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.258    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.258    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.258    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.258    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.273    PREPROCESSOR     ELABORATE             module  : virtual_module_45
+     6.273    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.273    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.273    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.273    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.273    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.289    PREPROCESSOR     ELABORATE             module  : virtual_module_46
+     6.290    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.290    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.290    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.290    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.290    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     6.306    PREPROCESSOR     ELABORATE             module  : virtual_module_47
+     6.306    PREPROCESSOR     ELABORATE             	inputs  : 34
+     6.306    PREPROCESSOR     ELABORATE             	outputs : 22
+     6.306    PREPROCESSOR     ELABORATE             	wires   : 104
+     6.306    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     6.306    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.327    ANALYZER         INDIANA               module: virtual_module_32
+     6.327    ANALYZER         INDIANA               model parameters:
+     6.327    ANALYZER         INDIANA               	glitches    : yes
+     6.328    ANALYZER         INDIANA               	transitions : no
+     6.328    ANALYZER         INDIANA               	couplings   : no
+     6.328    ANALYZER         INDIANA               verification:
+     6.328    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.328    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.328    ANALYZER         INDIANA               failing probe combinations:
+     6.329    ANALYZER         INDIANA               	total : 0
+     6.329    ANALYZER         INDIANA               	first : - 
+     6.329    ANALYZER         INDIANA               Verified on core 15
+----------------------------------------------------------------------------------------------------
+     6.329    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.329    ANALYZER         INDIANA               module: virtual_module_42
+     6.330    ANALYZER         INDIANA               model parameters:
+     6.330    ANALYZER         INDIANA               	glitches    : yes
+     6.330    ANALYZER         INDIANA               	transitions : no
+     6.330    ANALYZER         INDIANA               	couplings   : no
+     6.330    ANALYZER         INDIANA               verification:
+     6.330    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.330    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.330    ANALYZER         INDIANA               failing probe combinations:
+     6.330    ANALYZER         INDIANA               	total : 0
+     6.330    ANALYZER         INDIANA               	first : - 
+     6.330    ANALYZER         INDIANA               Verified on core 5
+----------------------------------------------------------------------------------------------------
+     6.331    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.331    ANALYZER         INDIANA               module: virtual_module_46
+     6.331    ANALYZER         INDIANA               model parameters:
+     6.331    ANALYZER         INDIANA               	glitches    : yes
+     6.331    ANALYZER         INDIANA               	transitions : no
+     6.331    ANALYZER         INDIANA               	couplings   : no
+     6.331    ANALYZER         INDIANA               verification:
+     6.331    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.331    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.331    ANALYZER         INDIANA               failing probe combinations:
+     6.331    ANALYZER         INDIANA               	total : 0
+     6.331    ANALYZER         INDIANA               	first : - 
+     6.331    ANALYZER         INDIANA               Verified on core 12
+----------------------------------------------------------------------------------------------------
+     6.331    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.331    ANALYZER         INDIANA               module: virtual_module_44
+     6.331    ANALYZER         INDIANA               model parameters:
+     6.331    ANALYZER         INDIANA               	glitches    : yes
+     6.331    ANALYZER         INDIANA               	transitions : no
+     6.331    ANALYZER         INDIANA               	couplings   : no
+     6.331    ANALYZER         INDIANA               verification:
+     6.331    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.332    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.332    ANALYZER         INDIANA               failing probe combinations:
+     6.332    ANALYZER         INDIANA               	total : 0
+     6.332    ANALYZER         INDIANA               	first : - 
+     6.332    ANALYZER         INDIANA               Verified on core 9
+----------------------------------------------------------------------------------------------------
+     6.332    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.332    ANALYZER         INDIANA               module: virtual_module_47
+     6.332    ANALYZER         INDIANA               model parameters:
+     6.332    ANALYZER         INDIANA               	glitches    : yes
+     6.332    ANALYZER         INDIANA               	transitions : no
+     6.332    ANALYZER         INDIANA               	couplings   : no
+     6.332    ANALYZER         INDIANA               verification:
+     6.332    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.332    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.332    ANALYZER         INDIANA               failing probe combinations:
+     6.332    ANALYZER         INDIANA               	total : 0
+     6.332    ANALYZER         INDIANA               	first : - 
+     6.333    ANALYZER         INDIANA               Verified on core 8
+----------------------------------------------------------------------------------------------------
+     6.333    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.333    ANALYZER         INDIANA               module: virtual_module_37
+     6.333    ANALYZER         INDIANA               model parameters:
+     6.333    ANALYZER         INDIANA               	glitches    : yes
+     6.333    ANALYZER         INDIANA               	transitions : no
+     6.333    ANALYZER         INDIANA               	couplings   : no
+     6.333    ANALYZER         INDIANA               verification:
+     6.333    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.333    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.333    ANALYZER         INDIANA               failing probe combinations:
+     6.333    ANALYZER         INDIANA               	total : 0
+     6.333    ANALYZER         INDIANA               	first : - 
+     6.333    ANALYZER         INDIANA               Verified on core 13
+----------------------------------------------------------------------------------------------------
+     6.333    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.333    ANALYZER         INDIANA               module: virtual_module_40
+     6.333    ANALYZER         INDIANA               model parameters:
+     6.333    ANALYZER         INDIANA               	glitches    : yes
+     6.333    ANALYZER         INDIANA               	transitions : no
+     6.333    ANALYZER         INDIANA               	couplings   : no
+     6.333    ANALYZER         INDIANA               verification:
+     6.333    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.333    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.333    ANALYZER         INDIANA               failing probe combinations:
+     6.333    ANALYZER         INDIANA               	total : 0
+     6.333    ANALYZER         INDIANA               	first : - 
+     6.333    ANALYZER         INDIANA               Verified on core 10
+----------------------------------------------------------------------------------------------------
+     6.333    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.333    ANALYZER         INDIANA               module: virtual_module_39
+     6.333    ANALYZER         INDIANA               model parameters:
+     6.333    ANALYZER         INDIANA               	glitches    : yes
+     6.333    ANALYZER         INDIANA               	transitions : no
+     6.333    ANALYZER         INDIANA               	couplings   : no
+     6.333    ANALYZER         INDIANA               verification:
+     6.333    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.333    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.333    ANALYZER         INDIANA               failing probe combinations:
+     6.333    ANALYZER         INDIANA               	total : 0
+     6.334    ANALYZER         INDIANA               	first : - 
+     6.334    ANALYZER         INDIANA               Verified on core 0
+----------------------------------------------------------------------------------------------------
+     6.334    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.334    ANALYZER         INDIANA               module: virtual_module_45
+     6.334    ANALYZER         INDIANA               model parameters:
+     6.334    ANALYZER         INDIANA               	glitches    : yes
+     6.334    ANALYZER         INDIANA               	transitions : no
+     6.334    ANALYZER         INDIANA               	couplings   : no
+     6.334    ANALYZER         INDIANA               verification:
+     6.334    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.334    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.334    ANALYZER         INDIANA               failing probe combinations:
+     6.334    ANALYZER         INDIANA               	total : 0
+     6.334    ANALYZER         INDIANA               	first : - 
+     6.334    ANALYZER         INDIANA               Verified on core 4
+----------------------------------------------------------------------------------------------------
+     6.334    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.334    ANALYZER         INDIANA               module: virtual_module_33
+     6.334    ANALYZER         INDIANA               model parameters:
+     6.334    ANALYZER         INDIANA               	glitches    : yes
+     6.334    ANALYZER         INDIANA               	transitions : no
+     6.334    ANALYZER         INDIANA               	couplings   : no
+     6.334    ANALYZER         INDIANA               verification:
+     6.334    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.334    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.334    ANALYZER         INDIANA               failing probe combinations:
+     6.334    ANALYZER         INDIANA               	total : 0
+     6.334    ANALYZER         INDIANA               	first : - 
+     6.334    ANALYZER         INDIANA               Verified on core 14
+----------------------------------------------------------------------------------------------------
+     6.334    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.334    ANALYZER         INDIANA               module: virtual_module_41
+     6.334    ANALYZER         INDIANA               model parameters:
+     6.334    ANALYZER         INDIANA               	glitches    : yes
+     6.334    ANALYZER         INDIANA               	transitions : no
+     6.334    ANALYZER         INDIANA               	couplings   : no
+     6.334    ANALYZER         INDIANA               verification:
+     6.334    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.335    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.335    ANALYZER         INDIANA               failing probe combinations:
+     6.335    ANALYZER         INDIANA               	total : 0
+     6.335    ANALYZER         INDIANA               	first : - 
+     6.335    ANALYZER         INDIANA               Verified on core 1
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               module: virtual_module_35
+     6.335    ANALYZER         INDIANA               model parameters:
+     6.335    ANALYZER         INDIANA               	glitches    : yes
+     6.335    ANALYZER         INDIANA               	transitions : no
+     6.335    ANALYZER         INDIANA               	couplings   : no
+     6.335    ANALYZER         INDIANA               verification:
+     6.335    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.335    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.335    ANALYZER         INDIANA               failing probe combinations:
+     6.335    ANALYZER         INDIANA               	total : 0
+     6.335    ANALYZER         INDIANA               	first : - 
+     6.335    ANALYZER         INDIANA               Verified on core 11
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               module: virtual_module_36
+     6.335    ANALYZER         INDIANA               model parameters:
+     6.335    ANALYZER         INDIANA               	glitches    : yes
+     6.335    ANALYZER         INDIANA               	transitions : no
+     6.335    ANALYZER         INDIANA               	couplings   : no
+     6.335    ANALYZER         INDIANA               verification:
+     6.335    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.335    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.335    ANALYZER         INDIANA               failing probe combinations:
+     6.335    ANALYZER         INDIANA               	total : 0
+     6.335    ANALYZER         INDIANA               	first : - 
+     6.335    ANALYZER         INDIANA               Verified on core 7
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               module: virtual_module_34
+     6.335    ANALYZER         INDIANA               model parameters:
+     6.335    ANALYZER         INDIANA               	glitches    : yes
+     6.335    ANALYZER         INDIANA               	transitions : no
+     6.335    ANALYZER         INDIANA               	couplings   : no
+     6.335    ANALYZER         INDIANA               verification:
+     6.335    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.335    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.335    ANALYZER         INDIANA               failing probe combinations:
+     6.335    ANALYZER         INDIANA               	total : 0
+     6.335    ANALYZER         INDIANA               	first : - 
+     6.335    ANALYZER         INDIANA               Verified on core 3
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.335    ANALYZER         INDIANA               module: virtual_module_43
+     6.335    ANALYZER         INDIANA               model parameters:
+     6.336    ANALYZER         INDIANA               	glitches    : yes
+     6.336    ANALYZER         INDIANA               	transitions : no
+     6.336    ANALYZER         INDIANA               	couplings   : no
+     6.336    ANALYZER         INDIANA               verification:
+     6.336    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.336    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.336    ANALYZER         INDIANA               failing probe combinations:
+     6.336    ANALYZER         INDIANA               	total : 0
+     6.336    ANALYZER         INDIANA               	first : - 
+     6.336    ANALYZER         INDIANA               Verified on core 2
+----------------------------------------------------------------------------------------------------
+     6.336    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     6.336    ANALYZER         INDIANA               module: virtual_module_38
+     6.336    ANALYZER         INDIANA               model parameters:
+     6.336    ANALYZER         INDIANA               	glitches    : yes
+     6.336    ANALYZER         INDIANA               	transitions : no
+     6.336    ANALYZER         INDIANA               	couplings   : no
+     6.336    ANALYZER         INDIANA               verification:
+     6.336    ANALYZER         INDIANA               	assuming : d ≤ 1
+     6.337    ANALYZER         INDIANA               	verified : d ≤ 1
+     6.337    ANALYZER         INDIANA               failing probe combinations:
+     6.337    ANALYZER         INDIANA               	total : 0
+     6.337    ANALYZER         INDIANA               	first : - 
+     6.337    ANALYZER         INDIANA               Verified on core 6
+----------------------------------------------------------------------------------------------------
+     6.337    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     6.501    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY TRANSFER
+----------------------------------------------------------------------------------------------------
+     6.586    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     7.017    PREPROCESSOR     ELABORATE             module  : virtual_module_48
+     7.017    PREPROCESSOR     ELABORATE             	inputs  : 88
+     7.017    PREPROCESSOR     ELABORATE             	outputs : 32
+     7.017    PREPROCESSOR     ELABORATE             	wires   : 368
+     7.017    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     7.017    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     7.448    PREPROCESSOR     ELABORATE             module  : virtual_module_49
+     7.448    PREPROCESSOR     ELABORATE             	inputs  : 88
+     7.448    PREPROCESSOR     ELABORATE             	outputs : 32
+     7.448    PREPROCESSOR     ELABORATE             	wires   : 368
+     7.448    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     7.448    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     7.874    PREPROCESSOR     ELABORATE             module  : virtual_module_50
+     7.874    PREPROCESSOR     ELABORATE             	inputs  : 88
+     7.874    PREPROCESSOR     ELABORATE             	outputs : 32
+     7.874    PREPROCESSOR     ELABORATE             	wires   : 368
+     7.874    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     7.874    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     8.302    PREPROCESSOR     ELABORATE             module  : virtual_module_51
+     8.302    PREPROCESSOR     ELABORATE             	inputs  : 88
+     8.302    PREPROCESSOR     ELABORATE             	outputs : 32
+     8.302    PREPROCESSOR     ELABORATE             	wires   : 368
+     8.302    PREPROCESSOR     ELABORATE             Elaborated on core 0
+----------------------------------------------------------------------------------------------------
+     8.302    PREPROCESSOR     ELABORATE             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     8.354    ANALYZER         INDIANA               module: virtual_module_51
+     8.354    ANALYZER         INDIANA               model parameters:
+     8.354    ANALYZER         INDIANA               	glitches    : yes
+     8.354    ANALYZER         INDIANA               	transitions : no
+     8.354    ANALYZER         INDIANA               	couplings   : no
+     8.354    ANALYZER         INDIANA               verification:
+     8.354    ANALYZER         INDIANA               	assuming : d ≤ 1
+     8.354    ANALYZER         INDIANA               	verified : d ≤ 1
+     8.354    ANALYZER         INDIANA               failing probe combinations:
+     8.354    ANALYZER         INDIANA               	total : 0
+     8.354    ANALYZER         INDIANA               	first : - 
+     8.354    ANALYZER         INDIANA               Verified on core 12
+----------------------------------------------------------------------------------------------------
+     8.354    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     8.366    ANALYZER         INDIANA               module: virtual_module_48
+     8.366    ANALYZER         INDIANA               model parameters:
+     8.366    ANALYZER         INDIANA               	glitches    : yes
+     8.366    ANALYZER         INDIANA               	transitions : no
+     8.366    ANALYZER         INDIANA               	couplings   : no
+     8.366    ANALYZER         INDIANA               verification:
+     8.366    ANALYZER         INDIANA               	assuming : d ≤ 1
+     8.366    ANALYZER         INDIANA               	verified : d ≤ 1
+     8.366    ANALYZER         INDIANA               failing probe combinations:
+     8.366    ANALYZER         INDIANA               	total : 0
+     8.366    ANALYZER         INDIANA               	first : - 
+     8.366    ANALYZER         INDIANA               Verified on core 2
+----------------------------------------------------------------------------------------------------
+     8.366    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     8.374    ANALYZER         INDIANA               module: virtual_module_50
+     8.374    ANALYZER         INDIANA               model parameters:
+     8.374    ANALYZER         INDIANA               	glitches    : yes
+     8.374    ANALYZER         INDIANA               	transitions : no
+     8.374    ANALYZER         INDIANA               	couplings   : no
+     8.374    ANALYZER         INDIANA               verification:
+     8.374    ANALYZER         INDIANA               	assuming : d ≤ 1
+     8.374    ANALYZER         INDIANA               	verified : d ≤ 1
+     8.374    ANALYZER         INDIANA               failing probe combinations:
+     8.374    ANALYZER         INDIANA               	total : 0
+     8.374    ANALYZER         INDIANA               	first : - 
+     8.374    ANALYZER         INDIANA               Verified on core 14
+----------------------------------------------------------------------------------------------------
+     8.374    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: ANALYSIS REPORT
+----------------------------------------------------------------------------------------------------
+     8.383    ANALYZER         INDIANA               module: virtual_module_49
+     8.383    ANALYZER         INDIANA               model parameters:
+     8.383    ANALYZER         INDIANA               	glitches    : yes
+     8.383    ANALYZER         INDIANA               	transitions : no
+     8.383    ANALYZER         INDIANA               	couplings   : no
+     8.383    ANALYZER         INDIANA               verification:
+     8.383    ANALYZER         INDIANA               	assuming : d ≤ 1
+     8.383    ANALYZER         INDIANA               	verified : d ≤ 1
+     8.383    ANALYZER         INDIANA               failing probe combinations:
+     8.383    ANALYZER         INDIANA               	total : 0
+     8.383    ANALYZER         INDIANA               	first : - 
+     8.383    ANALYZER         INDIANA               Verified on core 11
+----------------------------------------------------------------------------------------------------
+     8.383    ANALYZER         INDIANA               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     8.384    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: VISUALIZATION
+----------------------------------------------------------------------------------------------------
+     8.395    VISUALIZER       GRAPHVIZ (DOT)        Exported full circuit to dot/circuit_sca.dot.
+     8.395    VISUALIZER       GRAPHVIZ (DOT)        Exported subgraph of security flaws to dot/circuit_flaw_sca.dot.
+----------------------------------------------------------------------------------------------------
+     8.395    VISUALIZER       GRAPHVIZ (DOT)        [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO
+----------------------------------------------------------------------------------------------------
+     8.395    VERICA           SCA                   DONE!

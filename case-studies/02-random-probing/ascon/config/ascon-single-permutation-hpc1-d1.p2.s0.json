@@ -1,0 +1,62 @@
+{
+  "general": {
+    "verbose": 1,
+    "cores": 16,
+    "memory": 0,
+    "netlist": {
+      "file": "case-studies/02-random-probing/ascon/vlog/ascon-single-permutation-hpc1-d1.v",
+      "name": "",
+      "module": ""
+    },
+    "library": {
+      "file": "cell/nang45.txt",
+      "name": "NANG45"
+    },
+    "filtering": {
+      "sca": {
+        "type": "none",
+        "whitelist": "model/sca-whitelist",
+        "blacklist": "model/sca-blacklist"
+      }
+    },
+    "annotation": {
+      "file": "case-studies/02-random-probing/ascon/annotations/annotations-hpc.json",
+      "apply": true
+    },
+    "cudd": {
+      "reordering": false
+    },
+    "visualization": {
+      "enable": true,
+      "path": "dot/",
+      "full": true,
+      "partial": true
+    }
+  },
+  "side-channel": {
+    "enable": true,
+    "strategy": "indistinguishability",
+    "configuration": {
+      "order": 1,
+      "masking": 0,
+      "interrupt": false
+    },
+    "model": {
+      "glitches": true,
+      "transitions": false,
+      "couplings": false
+    },
+    "analysis": {
+      "uniformity": false,
+      "probing": false,
+      "random-probing": true
+    },
+    "random-probing": {
+      "copy-gates": "none",
+      "cycle-accurate": true,
+      "probability": 0.01,
+      "max-probes": 2,
+      "max-samples": 0
+    }
+  }
+}

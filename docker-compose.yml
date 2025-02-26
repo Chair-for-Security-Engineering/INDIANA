@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  verica:
+    container_name: indiana
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: indiana:latest

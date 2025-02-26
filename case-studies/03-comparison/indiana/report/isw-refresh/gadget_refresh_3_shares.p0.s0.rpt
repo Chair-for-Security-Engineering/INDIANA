@@ -1,0 +1,120 @@
+----------------------------------------------------------------------------------------------------
+                              INDIANA -- INDISTINGUISHABILITY ANALYSIS                              
+
+                              INDIANA -- INDISTINGUISHABILITY ANALYSIS                              
+
+                                      Ruhr-Universität Bochum                                      
+                              Pascal Sasdrich (pascal.sasdrich@rub.de)                              
+                        Jan Richter-Brockmann (jan.richter-brockmann@rub.de)                        
+
+                                         Copyright (c) 2025                                         
+                                           Pascal Sasdrich                                          
+                                        Jan Richter-Brockmann                                       
+
+                                         All rights reserved                                       
+----------------------------------------------------------------------------------------------------
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: CELL LIBRARY
+----------------------------------------------------------------------------------------------------
+     0.001    PARSER           CELLLIB               source: cell/nang45.txt
+     0.001    PARSER           CELLLIB               Parsed cell library with 14 gate type(s). 
+----------------------------------------------------------------------------------------------------
+     0.001    PARSER           CELLLIB               [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: DESIGN UNDER TEST
+----------------------------------------------------------------------------------------------------
+     0.002    PARSER           SAGE                  source: ./test/indistinguishability/gadgets/sage/ISW/refresh/gadget_refresh_3_shares.sage
+     0.002    PARSER           SAGE                  	module(s) : 1
+     0.002    PARSER           SAGE                  	gate(s)   : 6
+     0.002    PARSER           SAGE                  	 - comb.  : 6
+     0.002    PARSER           SAGE                  	 - seq.   : 0
+     0.002    PARSER           SAGE                  	wire(s)   : 12
+     0.002    PARSER           SAGE                  	pin(s)    : 27
+----------------------------------------------------------------------------------------------------
+     0.002    PARSER           SAGE                  [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FILTERING
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     FILTERING             Filtering for side-channel verification is disabled!
+     0.002    PREPROCESSOR     FILTERING             Filtering for fault-injection verification is disabled!
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     FILTERING             [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     MULTI-THREADING       cores: 1
+     0.002    PREPROCESSOR     MULTI-THREADING       memory: 0 GB
+     0.002    PREPROCESSOR     MULTI-THREADING       reordering: disabled
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     MULTI-THREADING       [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODEL POSTPROCESSING
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     MODEL POSTPROCESSING  No clock wires were found.
+     0.002    PREPROCESSOR     MODEL POSTPROCESSING  No control signals were found.
+     0.002    PREPROCESSOR     MODEL POSTPROCESSING  Removed 0 unconnected pins.
+     0.002    PREPROCESSOR     MODEL POSTPROCESSING  Removed 0 unconnected wires.
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     MODEL POSTPROCESSING  [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: PROPERTIES
+----------------------------------------------------------------------------------------------------
+     0.002    PREPROCESSOR     MODEL PROPERTIES      Determined 2 shared inputs.
+     0.002    PREPROCESSOR     MODEL PROPERTIES      	Minimum number of shares: 0
+     0.002    PREPROCESSOR     MODEL PROPERTIES      Identified stage(s): 
+     0.002    PREPROCESSOR     MODEL PROPERTIES      	logic    : 1
+     0.002    PREPROCESSOR     MODEL PROPERTIES      	register : 0
+----------------------------------------------------------------------------------------------------
+     0.003    PREPROCESSOR     MODEL PROPERTIES      [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: Configure FIA
+----------------------------------------------------------------------------------------------------
+     0.003    PREPROCESSOR     FIA                   FIA preprocessor is disabled!
+----------------------------------------------------------------------------------------------------
+     0.003    PREPROCESSOR     FIA                   [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: Configure SCA
+----------------------------------------------------------------------------------------------------
+     0.003    PREPROCESSOR     SCA                   Determined 3 probe positions.
+     0.003    PREPROCESSOR     SCA                   Determined 0 probe combinations.
+----------------------------------------------------------------------------------------------------
+     0.003    PREPROCESSOR     SCA                   [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: MODULE ELABORATION
+----------------------------------------------------------------------------------------------------
+     0.006    ELABORATE        ELABORATE             module  : topmodule
+     0.006    ELABORATE        ELABORATE             	inputs  : 6
+     0.006    ELABORATE        ELABORATE             	outputs : 3
+     0.006    ELABORATE        ELABORATE             	wires   : 12
+----------------------------------------------------------------------------------------------------
+     0.006    ELABORATE        ELABORATE             [1;32mSUCCESS[0m
+
+Simulated 15 software wire copies. 
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: RANDOM PROBING
+----------------------------------------------------------------------------------------------------
+     0.013    ANALYZER         FFT-INDIANA           leakage probability (stage 1) : 
+     0.013    ANALYZER         FFT-INDIANA           	max. probes  : 0
+     0.013    ANALYZER         FFT-INDIANA           	max. samples : 0
+     0.013    ANALYZER         FFT-INDIANA           	topmodule (min./max.) : 2.118637e-06 / 2.118637e-06
+     0.013    ANALYZER         FFT-INDIANA           total (min./max.): 2.118637e-06 / 2.118637e-06
+----------------------------------------------------------------------------------------------------
+     0.013    ANALYZER         FFT-INDIANA           [1;32mSUCCESS[0m
+
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO: FREQUENCY UPDATE
+----------------------------------------------------------------------------------------------------
+     0.013    ENVIRONMENT      INDIANA               [1;32mSUCCESS[0m
+
+  TIME [s]    SERVICE          CONFIGURATION         INFO
+----------------------------------------------------------------------------------------------------
+     0.013    INDIANA           SCA                   DONE!

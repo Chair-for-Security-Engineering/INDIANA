@@ -1,0 +1,14 @@
+in with 2 elements: {a:0, b:1, }
+randoms with 20 elements: {r01:0, r02:1, r03:2, r04:3, r12:4, r13:5, r14:6, r23:7, r24:8, r34:9, rr01:10, rr02:11, rr03:12, rr04:13, rr12:14, rr13:15, rr14:16, rr23:17, rr24:18, rr34:19, }
+out with 1 elements: {e:0, }
+Gadget with 2 input(s),  1 output(s),  5 share(s)
+Total number of intermediate variables : 70
+Total number of variables : 75
+Total number of Wires : 110
+Total number of duplications: 1
+
+Dimension reduction: old circuit: 75 vars -- new circuit: 65 vars.
+
+Removed 10 variables : {a0 a1 a2 a3 a4 b0 b1 b2 b3 b4 }
+
+f(p) = [ 0, 0, 0, 0, 32, 3888, 

@@ -1,0 +1,21 @@
+in with 2 elements: {a:0, b:1, }
+randoms with 6 elements: {r01:0, r02:1, r12:2, rr01:3, rr02:4, rr12:5, }
+out with 1 elements: {e:0, }
+Gadget with 2 input(s),  1 output(s),  3 share(s)
+Total number of intermediate variables : 24
+Total number of variables : 27
+Total number of Wires : 36
+Total number of duplications: 1
+
+Dimension reduction: old circuit: 27 vars -- new circuit: 21 vars.
+
+Removed 6 variables : {a0 a1 a2 b0 b1 b2 }
+
+f(p) = [ 0, 0, 8, 324, 6166, 73204, 608984, 3787456, 18353876, 71293901, 226602442, 598992030, 1335241028, 2540822417, 4171118044, 5960336754, 7468036130, 8252140691, 8076568754, 7022125355, 5432640136, 3741397356, 2291859454, 1246203735, 599501774, 253937810, 94106566, 30256419, 8347410, 1947783, 376992, 58905, 7140, 630, 36, 1 ]
+
+pmax = 0,2588747622 -- log2(pmax) = -1,9496737714
+pmin = 0,2588746571 -- log2(pmin) = -1,9496743572
+
+f(0,01) = 0,0000085153
+
+Verification completed in 0 min 1 sec.

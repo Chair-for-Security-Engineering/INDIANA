@@ -1,0 +1,63 @@
+{
+    "general": {
+        "verbose": 0,
+        "cores": 1,
+        "memory": 4,
+        "netlist": {
+            "file": "test/ca-gadgets/detection/nl/nina-det-d2-k1.nl",
+            "name": "",
+            "module": ""
+        },
+        "library": {
+            "file": "cell/Instructions.txt",
+            "name": "NL"
+        },
+        "filtering": {
+            "sca": {
+                "type": "none",
+                "whitelist": "model/sca-whitelist",
+                "blacklist": "model/sca-blacklist"
+            }
+        },
+        "annotation": {
+            "file": "model/annotations.json",
+            "apply": true
+        },
+        "cudd": {
+            "reordering": false
+        },
+        "visualization": {
+            "enable": false,
+            "path": "dot/",
+            "full": true,
+            "partial": true
+        }
+    },
+    "side-channel": {
+        "strategy": "indistinguishability",
+        "enable": false,
+        "configuration": {
+            "order": 1,
+            "masking": 0,
+            "interrupt": true
+        },
+        "model": {
+            "glitches": true,
+            "transitions": false,
+            "couplings": false
+        },
+        "analysis": {
+            "uniformity": false,
+            "probing": true,
+            "random-probing": true
+        },
+        "random-probing": {
+          "copy-gates": "none",
+          "copy-gates": "software",
+          "cycle-accurate": false,
+          "probability": 0.01,
+          "max-probes": 0,
+          "max-samples": 0
+        }
+    }
+}
