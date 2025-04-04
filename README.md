@@ -268,3 +268,8 @@ Subfolder                   | Link to Paper
 In order to reproduce the results, you can use the `execute-case-studies.sh` script. As a parameter, you can pass a target directory. The script automatically searches in all subfolders for configuration files and executes them. For example, you can use `case-studies/01-treshold-probing` as a parameter to reproduce the results reported in Table 2. Additionally, you can just reproduce the results for a specific cipher, e.g., to reproduce the results of SKINNY-64 of Table 2 you can use `case-studies/01-treshold-probing/skinny64` as parameter. 
 
 All experiments have been executed on an Ubuntu server equipped with 128 GB RAM and an Intel Xeon E5-1660 Central Processing Unit (CPU) running at 3.2 GHz. The CPU has 16 cores that we fully utilize in case the corresponding tool supports multithreading.
+
+
+## 11. Acknowledgment 
+
+We would like to thank the anonymous reviewers from the EuroCrypt'25 artifact submission committee that provided us with useful comments and suggestions to improve the repository of INDIANA.
