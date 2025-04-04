@@ -20,18 +20,22 @@ INDIANA can be build directly from the sources and execute the binaries.
 To build INDIANA directly from the sources and execute the binaries, please follow the instructions below:
 
 1. Download the source code of INDIANA. 
-2. Download and unpack the [Boost Graph Library (BGL)](https://www.boost.org/doc/libs/1_71_0/more/getting_started/unix-variants.html) library.
-3. `cd boost_1_71_0`
-4. `./bootstrap.sh --prefix=/path/to/INDIANA --with-libraries=program_options`
-5. `./b2 install`
-6. Download and unpack the [CUDD](https://github.com/ivmai/cudd) library.
-7. `cd cudd/`
-8. `./configure --prefix=/path/to/INDIANA --enable-shared --enable-obj`
-9. `make check`
-10. `make install`
-11. Change directory to the INDIANA folder. 
-12. If necessary, update the `INCLUDES` variable in the INDIANA makefile with the path to your copy of BGL (i.e., `/path/to/INDIANA/include/` as selected as prefix in step 4).
-13. `make release`
+2. Executing the following command to download and unpack the [Boost Graph Library (BGL)](https://www.boost.org/doc/libs/1_71_0/more/getting_started/unix-variants.html) library.
+    1. `wget https://archives.boost.io/release/1.71.0/source/boost_1_71_0.tar.bz2`
+    2. `tar --bzip2 -xf /path/to/boost_1_71_0.tar.bz2`
+    3. `cd boost_1_71_0`
+    4. `./bootstrap.sh --prefix=/path/to/INDIANA --with-libraries=program_options`
+    5. `./b2 install`
+    6. `cd ..`
+3. Executing the following command to download and unpack the [CUDD](https://github.com/ivmai/cudd) library.
+    1. `git clone https://github.com/ivmai/cudd.git`
+    2. `cd cudd/`
+    3. `./configure --prefix=/path/to/INDIANA --enable-shared --enable-obj`
+    4. `make check`
+    5. `make install`
+4. Change directory to the INDIANA folder. 
+5. If necessary, update the `INCLUDES` variable in the INDIANA makefile with the path to your copy of BGL (i.e., `/path/to/INDIANA/include/` as selected as prefix in step 4).
+6. `make release`
 
 
 ## 4. Quick Start
@@ -252,4 +256,15 @@ Please see `LICENSE` for further license instructions.
 
 ### 10.1 Reproduce results of the case studies
 
-In order to reproduce the results of the case studies from the papers, we prepared a dedicated folder `case-studies/` which contains all configuration files that were used to generate the evaluation results. 
+In order to reproduce the results of the case studies from the paper, we prepared a dedicated folder `case-studies/` which contains all configuration files that were used to generate the evaluation results. More precisely, the following table provides an overview about the connections between the subfolders and tables/figures of the paper.
+
+Subfolder                   | Link to Paper 
+----------------------------|-------------------------------------------
+`01-threshold-probing`      | Contains all results reported in Table 2.
+`02-random-probing/aes`     | Contains all results reported in Table 5.
+`02-random-probing/present` | Contains all results reported in Table 3 and Table 4.
+`03-comparison`             | Contains all results reported in Table 6 of the extended version of the paper.
+
+In order to reproduce the results, you can use the `execute-case-studies.sh` script. As a parameter, you can pass a target directory. The script automatically searches in all subfolders for configuration files and executes them. For example, you can use `case-studies/01-treshold-probing` as a parameter to reproduce the results reported in Table 2. Additionally, you can just reproduce the results for a specific cipher, e.g., to reproduce the results of SKINNY-64 of Table 2 you can use `case-studies/01-treshold-probing/skinny64` as parameter. 
+
+All experiments have been executed on an Ubuntu server equipped with 128 GB RAM and an Intel Xeon E5-1660 Central Processing Unit (CPU) running at 3.2 GHz. The CPU has 16 cores that we fully utilize in case the corresponding tool supports multithreading.

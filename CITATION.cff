@@ -1,0 +1,61 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: INDIANA
+message: >-
+  Verifying (Random) Probing Security through
+  Indistinguishability Analysis
+type: software
+authors:
+  - given-names: Jan
+    family-names: Richter-Brockmann
+    email: jan.richter-brockmann@rub.de
+    affiliation: Ruhr University Bochum
+    orcid: 'https://orcid.org/0000-0002-8454-4755'
+  - given-names: Pascal
+    family-names: Sasdrich
+    email: pascal.sasdrich@rub.de
+    affiliation: Ruhr University Bochum
+    orcid: 'https://orcid.org/0000-0002-5443-626X'
+identifiers:
+  - type: url
+    value: 'https://eprint.iacr.org/2024/833.pdf'
+    description: Extended version of the paper.
+repository-code: >-
+  https://github.com/Chair-for-Security-Engineering/INDIANA/tree/master
+abstract: >-
+  While masking is a widely used defense against passive
+  side-channel attacks, its secure implementation in
+  hardware continues to be a manual, complex, and
+  error-prone process. 
+
+  This paper introduces INDIANA, a comprehensive security
+  verification methodology for hardware masking. Our results
+  include a hardware verification tool, enabling a complete
+  analysis of simulation-based security in the
+  glitch-extended probing model and intra-cycle estimations
+  for leakage probabilities in the random probing model.
+  Notably, INDIANA is the first framework to analyze
+  arbitrary masked circuits in both models, even at the
+  scale of full SPN cipher rounds (e.g., AES), while
+  delivering exact verification results. To achieve accurate
+  and comprehensive verification, we propose a partitionable
+  probing distinguisher that allows for fast validation of
+  probe tuples, surpassing current methods that rely on
+  statistical independence. Furthermore, our approach
+  naturally supports extensions to the random probing model
+  by utilizing Fast Fourier-Hadamard Transformations (FHTs).
+
+  Benchmark results show that INDIANA competes effectively
+  with leading probing model verification tools, such as
+  ironMask, maskVerif, and VERICA. INDIANA is also the first
+  tool that is capable to provide intracycle estimations of
+  random probing leakage probabilities for large-scale
+  masked circuits.
+keywords:
+  - Indistinguishability Analysis
+  - Side-Channel Analysis
+  - Probing Security
+  - Random Probing Security
+  - Security Verification
